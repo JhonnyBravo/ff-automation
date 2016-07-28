@@ -6,7 +6,7 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
-from ps_phantomjs import lib
+from ps_firefox import lib
 
 
 def main():
@@ -24,7 +24,7 @@ def main():
         help='リンクの情報を出力するファイルのパス。')
 
     args = parser.parse_args()
-    driver = lib.pjs_automation()
+    driver = lib.ff_automation()
     driver.get_links(args.url, args.path)
 
 if __name__ == '__main__':
