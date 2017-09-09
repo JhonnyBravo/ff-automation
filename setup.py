@@ -9,7 +9,7 @@ except IOError:
 
 setup(
     name="ff-automation",
-    version="1.0",
+    version="1.1",
     description="Firefox automation utility.",
     author="Jhonny Bravo",
     author_email="sanfranceshika5@gmail.com",
@@ -20,7 +20,8 @@ setup(
         "console_scripts": [
             "get_content_by_css_selector=ps_firefox.bin.get_content_by_css_selector:main",
             "get_content_by_tag_name=ps_firefox.bin.get_content_by_tag_name:main",
-            "get_content_by_xpath=ps_firefox.bin.get_content_by_xpath:main"
+            "get_content_by_xpath=ps_firefox.bin.get_content_by_xpath:main",
+            "get_links=ps_firefox.bin.get_links:main"
         ]
     },
     long_description=long_description,
